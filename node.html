@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('zoomus', {
+        category: "web",
+        defaults: {
+            name: {
+                value: "zoomus"
+            },
+            config: {
+                value: "",
+                type: "zoomus-config"
+            }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "white-globe.png",
+        color: "#a6bbcf",
+        label: function () {
+            return (this.name || "zoomus")
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="zoomus">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-config"><i class="icon-bookmark"></i> Config</label>
+        <input type="text" id="node-input-config">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="zoomus">
+
+</script>
